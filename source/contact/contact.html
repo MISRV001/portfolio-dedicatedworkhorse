@@ -1,0 +1,54 @@
+	<section>
+		<div class="row">
+			<div class="col-md-12 col-lg-12">
+				<div class="panel">
+					<h5>Contact</h5>
+					<p>The form is just an example of AngularJS Data-Binding and validation. Please use these to reach me. I am looking forward to hearing from you. . .</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="row">
+			<div class="col-md-6 col-lg-6">
+				<div class="panel">
+					<p><strong>John Hoover</strong></p>
+					<p><strong>email:</strong> john.hoover@dedicatedworkhorse.com</p>
+					<p><strong>phone:</strong> 248.632.0073</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<div class="panel">
+					<div id="contactForm-demo" class="tab-pane fade active in">
+						<form class="contactForm" method="post" action="">
+							<h1>Contact Form<span>This is just an example form. Fill it in and watch below for AngularJS Data-Binding!!!</span></h1>
+							<p>
+								<label><span>Your Name:</span><input type="text" placeholder="Your Full Name" name="contactName" id="contactName" data-ng-model="contactName" required></label>
+								<label><span>Your Company:</span><input type="text" placeholder="Company you Represent" name="contactCompany" id="contactCompany" data-ng-model="contactCompany"></label>
+								<label><span>Your Email:</span><input type="email" placeholder="Valid Email Address" name="contactEmail" id="contactEmail" data-ng-model="contactEmail"></label>
+								<label><span>Your Phone:</span><input type="text" placeholder="Valid Phone Number" name="contactPhone" id="contactPhone" data-ng-model="contactPhone"></label>
+								<label><span>Message:</span><textarea placeholder="Your Message to Us" name="contactMessage" id="contactMessage" data-ng-model="contactMessage" required></textarea></label>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="row">
+			<div class="col-md-12 col-lg-12">
+				<div class="panel">
+					<h5>Watch your form fill out as you type...(cooler on the computer than a phone...lol)</h5>
+					<p>Dear Mr. Hoover,</p>
+					<br>
+					<p>My name is <strong>{{ contactName || 'Your Name' }}</strong> with <strong>{{ contactCompany || 'Your Company' }}</strong> and I would love for you to find my information in my message below.</p>
+					<br>
+					<p>{{ contactMessage || 'Your Message Here' }} <br><br></p>
+					<p>Here is my contact information...<strong>{{ contactEmail || 'Your Email' }}</strong> and <strong>{{ contactPhone || 'Your Phone' }}</strong> Thanks!
+				</div>
+			</div>
+		</div>
+	</section>

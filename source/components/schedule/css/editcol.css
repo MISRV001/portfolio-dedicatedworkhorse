@@ -1,0 +1,11 @@
+table.jCalendar {
+	font-size: 10pt;
+}
+
+select {
+	width: 300px;
+}
+
+#copyUntil {
+	width: 150px;
+}

@@ -1,0 +1,23 @@
+	.leafy {
+		margin: 0px auto;
+		border-radius: 5px 40px 5px;
+		background: #BADA55;
+		height: 80px;
+		width: 80px;
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	.aboutMeBox {
+		max-width: 300px;
+		padding: 10px;
+		border: thin solid #BADA55;
+		box-shadow: 10px 10px 5px #888888;
+	}
+
+	.aboutMeBoxHeader {
+		max-width: 300px;
+		margin: -10px -10px 0px -10px;
+		padding: 10px;
+		background-color: #BADA55;
+	}

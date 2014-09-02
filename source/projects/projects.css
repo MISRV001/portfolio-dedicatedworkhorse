@@ -1,0 +1,35 @@
+.projectsPanel {
+	margin: 20px auto;
+	padding: 10px;
+	width: 70vw;
+	height: 300px;
+	border-radius: 10px;
+	border: thin solid #BADA55;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.portfolioLeftBox {
+	width: 45%;
+	float: left;
+}
+
+.portfolioRightBox {
+	width: 45%;
+	text-align: right;
+	float: right;
+}
+
+.resizeme {width: 95%}
+
+.portfolioHeading { font-size: large; }
+.portfolioBody { display: block; margin: 20px 0px; }
+.portfolioLinkBox { margin-top: 10px; font-weight: bold }
+.portfolioLinkBox a { font-weight: normal }
+.portfolioLinkBox a:hover { text-decoration: underline; }
+.projectsTinyText { font-size: small }
+@media (max-width: 600px){
+	.portfolioBody { font-size: 2vmin; }
+}
+@media (max-width: 380px){
+	.portfolioBody { font-size: 2.5vmin; }
+}
